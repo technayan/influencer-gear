@@ -25,6 +25,28 @@ body {
     margin: auto;
 }
 
+.primary-btn {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 40px 10px 24px;
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.primary-btn .arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: right 0.3s ease;
+}
+.primary-btn:hover .arrow{
+    right: 10px
+}
+
+
 
 /* Navbar CSS */
 .navbar-wrapper {
@@ -32,7 +54,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #000;
 }
 .logo {
     font-size: 24px;
@@ -68,4 +89,48 @@ body {
 .nav-link:hover,
 .cart:hover {
     color: var(--primary-color);
-}   
+}
+
+/* Hero Section CSS */
+.hero-section {
+    height: 600px;
+}
+.hero-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 100%;
+}
+.hero-title {
+    font-size: 52px;
+    line-height: 78px;
+    font-weight: 700;
+    color: var(--black-color);
+}
+.hero-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black-color);
+    font-weight: 600;
+    margin: 16px 0 25px;
+    width: 90%;
+}
+#hero-btn {
+    border-radius: 41px;
+}
+.hero-img-area {
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 600px;
+}
+.hero-img {
+    transition: transform 0.3s ease;
+}
+
+.hero-img-area:hover .hero-img{
+    transform: scale(1.1);
+}
