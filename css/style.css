@@ -46,6 +46,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     transition: right 0.3s ease;
+    
 }
 .primary-btn:hover .arrow{
     right: 10px
@@ -152,7 +153,7 @@ body {
 
 /* Popular Collection Section CSS*/
 .popular-collection-section {
-    padding: 100px 0;
+    padding: 100px 0 50px;
 }
 .section-title {
     font-size: 28px;
@@ -245,4 +246,30 @@ body {
 }
 .collection-btn:hover .arrow {
     right: -25px;
+}
+
+/* Featured Products CSS */
+.featured-products-section {
+    padding: 50px 0 100px;
+}
+.featured-products-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+
+.featured-text-area {
+    margin-left: 90px;
+}
+.featured-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: #0a0b26;
+}
+.featured-desc {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 28px;
+    margin: 16px 0;
 }
