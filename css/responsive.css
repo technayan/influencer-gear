@@ -1,0 +1,145 @@
+
+
+
+/* Devices (less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .nav-link,
+    .cart {
+        margin-left: 24px;
+    }
+    .hero-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .hero-img-area {
+        background-size: 100%;
+    }
+    .collection-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured-img-area {
+        width: 50%;
+    }
+    .featured-text-area {
+        width: 50%;
+        margin-left: 20px;
+    }
+}
+
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .company-logo-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+        grid-row-gap: 20px;
+    }
+    .featured-text-area {
+        margin-right: 10px;
+    }
+    .featured-title {
+        font-size: 30px;
+    }
+    .featured-desc {
+        margin: 10px 0;
+        line-height: 25px;
+    }
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .menu {
+        display: none;
+    }
+    .nav-link {
+        padding: 20px 0;
+        margin-left: 0;
+    }
+    label {
+        display: block;
+    }
+    .hamburger-icon {
+        display: block;
+    }
+    .hero-section {
+        padding: 50px 0;
+    }
+    .hero-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hero-text-area {
+        order: 2;
+        text-align: center;
+    }
+    .hero-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .hero-desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-img-area {
+        background-size: 80%;
+        background-position: center center;
+        justify-content: center;
+        order: 1;
+        max-height: 600px;
+    }
+    .popular-collection-section {
+        padding: 50px 0;
+    }
+    .collection-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+    }
+    .featured-products-section {
+        padding: 20px 0 50px;
+    }
+    .featured-products-wrapper {
+        flex-direction: column;
+    }
+    .featured-text-area {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .featured-desc {
+        line-height: 26px;
+        margin: 16px 0;
+    }
+    .featured-img-area {
+        width: 100%;
+        text-align: center;
+    }
+    .featured-img {
+        width: 100%;
+    }
+ }
+
+
+ /* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .logo {
+        font-size: 16px;
+    }
+    .hero-img-area {
+        height: auto;
+        background-size: 85%;
+    }
+    .hero-img {
+        width: 90%;
+    }
+    .hero-text-area {
+        margin-top: 50px;
+    }
+    .company-logo-wrapper {
+        grid-gap: 20px;
+    }
+}
