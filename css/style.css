@@ -1,9 +1,71 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
+/* Root */
+:root {
+    --primary-color: #e02c6d;
+    --black-color: #3a3a3a;
+    --text-color: #787878;
+}
 /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.container-fluid {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Navbar CSS */
+.navbar-wrapper {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--black-color);
+    transition: color 0.3s ease;
+}
+.menu-area {
+    display: flex;
+}
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;  
+}
+.nav-link,
+.cart{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--black-color);
+    margin-left: 34px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+.search,
+.cart {
+    font-size: 20px;
+    margin-top: 5px;
+}
+.logo:hover,
+.nav-link:hover,
+.cart:hover {
+    color: var(--primary-color);
+}   
